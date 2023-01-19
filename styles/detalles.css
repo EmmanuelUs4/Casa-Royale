@@ -1,0 +1,355 @@
+li{
+    list-style-type: none
+}
+body{
+    width: 100%;
+    height: 600px;
+}
+*{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+header{
+    width: 100%;
+    color: white;
+}
+.favoriteText, .propertyImg, .contFavorite, .contLogo, .contHomepage, .contProperties, .contAgencies, .contPages, .contAbout, .contContact:hover {
+    cursor: pointer;
+}
+.infoSectionHeader{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    background-color: #2A41E8;
+}
+    .infoHeader{
+        margin-top: 20px;
+    }
+   
+
+
+.navSectionHeader{
+    width: 100%;
+    display: flex;
+    margin-bottom: -7px;
+}
+    .navHeader{
+        width: 100%;
+        display: flex;
+    }
+        .contenedorNavInfo{
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: center;
+        }
+            .contLogo{
+                margin-left: 1%;
+            }
+            .submitListing{
+                height: 100%;
+                width: 100%;
+            }
+            .contFavorite{
+                color: rgb(136, 136, 136);
+            }
+
+
+            .description{
+                color: black;
+            }
+
+
+
+main{
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+    .PropertyData{
+        flex-wrap: wrap;
+        width: 60%;
+        margin-left: 3%;
+        margin-top: 5%;
+    }
+        .allPropertyData{
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: column;
+            text-overflow: ellipsis;
+            overflow: hidden;
+            white-space: wrap;
+        }.propertyImagesCont{
+            display: flex;
+            flex-wrap: wrap;
+            gap: 5%;
+            margin-bottom: 3%;
+        }.propertyImagesCont img{
+            margin-bottom: 10%;
+            height: 250px;
+            width: 300px;
+        }
+            .locationCont{
+                margin-left: 5%;
+                margin-bottom: 5%;
+            }
+                .location{
+                    color: black;
+                    font-size: 20px;
+                }
+
+            .ubicationCont{
+                margin-left: 3%;
+                margin-bottom: 1%;
+            }
+                .ubication{
+                    font-size: 25px;
+                }
+            
+            .typeAndStatusCont{
+                margin-bottom: 5%;
+                margin-left: 3%;
+                display: flex;
+                gap: 1%;
+            }
+                .typePropertTyext{
+                    background-color: #2A42E8;
+                    color: white;
+                    padding: 5px;
+                    border-radius: 4px;
+                }
+                .statusPropertyText{
+                    background-color: #FF5E15;
+                    color: white;
+                    padding: 5px;
+                    border-radius: 4px;
+                }
+                .priceCont{
+                    margin-left: 3%;
+                    margin-bottom: 5%;
+                    
+                }
+
+            .areaAndRoomsCont{
+                margin-left: 3%;
+                margin-bottom: 5%;
+                display: flex;
+                gap: 20%;
+            }
+                .area{
+                    display: flex;
+                    font-size: 15PX;
+                }
+                .rooms{
+                    font-size: 15px;
+                    display: flex;
+                    gap: 20px;
+                }
+            .agentDateCont{
+                margin-left: 3%;
+                margin-bottom: 5%;
+                display: flex;
+                justify-content: space-between;
+                margin-right: 14%;
+            }
+                .agent{
+                    color: #2A41E8;
+                    
+                }
+                    .agent img{
+                    height: 30px;
+                    position: relative;
+                    top: 10px;
+                    }
+                .date{
+                    color: rgb(139, 138, 138);
+                    font-size: 14px;
+                    position: relative;
+                    top: 15px;
+                }
+            .descriptionCont{
+                margin-left: 4%;
+                margin-right: 14%;
+                margin-bottom: 5%;
+            }
+
+
+            
+
+    .distanceAndHouseInfoCont{
+        margin-top: 10px;
+        display: flex;
+        justify-content: space-between;
+    }.infoIcons{
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+
+
+/* Mas propiedades a la derecha */
+
+.moreProperties{
+    margin-top: 5%;
+    margin-left: 3%;
+}
+
+            .propertyCard{
+                display: flex;
+                flex-direction: column;
+                position: relative;
+                width: 275px;
+                margin-bottom: 50px;
+                justify-content: center;
+            }
+                .allPropertyDataMoreProperties{
+                    margin-left: 20px;
+                    margin-right: 20px;
+                }
+                .propertyImg{
+                    object-fit: cover;
+                    
+                }.propertyImg img{
+                    width: 275px;
+                    height: 200px;
+                }
+                .typeText{
+                    position: absolute;
+                    top: 20px;
+                    left: 20px;
+                    color: white;
+                    background-color: #2A42E8;
+                    padding-left: 5px;
+                    padding-right: 5px; 
+                    padding-top: 5px;
+                    padding-bottom: 3px;  
+                    border-radius: 4px;
+                }.statusText{
+                    position: absolute;
+                    top: 20px;
+                    left: 80px;
+                    padding-left: 5px;
+                    padding-right: 5px;  
+                    padding-top: 5px;
+                    color: white;
+                    background-color: #FF5E15;
+                    padding-bottom: 3px;  
+                    border-radius: 4px;
+                }.favoriteText{
+                    position: absolute;
+                    left: 230px;
+                    top: 20px;
+                    background-color: rgb(71, 68, 255);
+                    padding-left: 5px;
+                    padding-right: 5px; 
+                    padding-top: 5px;
+                    padding-bottom: 3px;  
+                    border-radius: 4px;
+                    color: white;
+                }.priceText{
+                    position: absolute;
+                    top: 150px;
+                    left: 20px;
+                    background-color: white;
+                    color: #2A42E8;
+                    padding-left: 10px;
+                    padding-right: 10px; 
+                    padding-top: 5px;
+                    padding-bottom: 3px;  
+                    border-radius: 4px;
+                }
+            
+                .ubicationText{
+                    color: rgb(119, 119, 119);
+                    font-size: 13px;
+                    margin-top: 10px;
+                    margin-left: 10px;
+                }
+            
+                .infoTextCont{
+                    display: flex;
+                    font-size: 14px;
+                    margin-top: 10px;
+                }
+                    .infoText{
+                        text-overflow: ellipsis;
+                        overflow: hidden;
+                        white-space: wrap;
+                    }
+                .posterAndDateCont{
+                    margin-top: 10px;
+                    display: flex;
+                    justify-content: space-between;
+                    
+                }.posterText{
+                    color: #2A41E8;
+                }.agentIcon{
+                    border-radius: 4px;
+                }
+                .postDateText{
+                    color: rgb(119, 119, 119);
+                    font-size: 12px;
+                }
+            
+                .distanceAndHouseInfoCont{
+                    margin-top: 10px;
+                    display: flex;
+                    justify-content: space-between;
+                }.infoIcons{
+                    display: flex;
+                    justify-content: space-evenly;
+                }
+                footer{
+                    background-color: rgb(32, 32, 32);
+                    color: rgb(134, 134, 134);
+                    display: flex;
+                    flex-direction: column;
+                    width: 100%;
+                }
+                   .contFooterLogo{
+                    margin-left: 10%;
+                   }
+                   .moreInformation{
+                    display: flex;
+                    gap: 5%;
+                    margin-top: 5%;
+                    margin-left: 10%;
+                    margin-right: 10%;
+                   }
+                   .titleInformation{
+                    margin-bottom: 20%;
+                   }
+                   .footertext{
+                    margin-bottom: 5%;
+                   }
+                   .titleInformationCasa{
+                    margin-bottom: 5%;
+                   }
+                        .footertextDirection{
+                            margin-left: 5%;
+                        }
+                        .footertextNum{
+                            margin-left: 5%;
+                
+                        }
+                .footerfooter{
+                    display: flex;
+                    justify-content: space-between;
+                    margin-left: 10%;
+                    margin-right: 10%;
+                    margin-top: 5%;
+                    margin-bottom: 5%;
+                }
+                .hrfooter{
+                    background: #2A41E8;
+                    margin-top: 5%;
+                }
+                .hrlogo{
+                    margin-top: -9px;
+                }

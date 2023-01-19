@@ -1,0 +1,319 @@
+li{
+    list-style-type: none
+}
+body{
+    width: 100%;
+    height: 600px;
+}
+*{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+header{
+    width: 100%;
+    color: white;
+}
+.favoriteText, .propertyImg, .contFavorite, .contLogo, .contHomepage, .contProperties, .contAgencies, .contPages, .contAbout, .contContact:hover {
+    cursor: pointer;
+}
+.infoSectionHeader{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    background-color: #2A41E8;
+}
+    .infoHeader{
+        margin-top: 20px;
+    }
+   
+
+
+.navSectionHeader{
+    width: 100%;
+    display: flex;
+    margin-bottom: -7px;
+}
+    .navHeader{
+        width: 100%;
+        display: flex;
+    }
+        .contenedorNavInfo{
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: center;
+        }
+            .contLogo{
+                margin-left: 1%;
+            }
+            .contFavorite{
+                color: rgb(136, 136, 136);
+            }
+            .submitListing{
+                height: 100%;
+                width: 100%;
+            }
+
+    
+
+main{
+    height: 100%;
+    background-image: url('/images/fondo.png');
+    background-repeat : no-repeat;
+    background-size : contain;
+    background-size: 100% 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: #FAFAFA;
+    
+}
+
+.hSecondText{
+    margin-top: 100px;
+    padding-left: 10%;
+    font-size: 30px;
+    color: white;
+    font-style: normal;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.hMainText{
+    margin-bottom: 30px;
+    font-size: 15px;
+    padding-left: 10%;
+    color: white;
+    font-style: normal;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+
+
+.formCont{
+    display: flex;
+    flex-wrap: wrap;
+    background-color: rgb(255, 255, 255);
+    margin-left: 10%;
+    margin-right: 20%;
+    margin-bottom: 350px;
+    width: 80%;
+    border-radius: 4px;
+    
+}
+    .typeClass{
+        display: flex;
+        flex-direction: column;
+        background-color: #ECECEC;
+        margin-top: 30px;
+        margin-bottom: 50px;
+        margin-left: 2%;
+        padding: 10px;
+        border-radius: 4px;
+        width: 15%;
+        height: 45%;
+    }.typeClass select{
+        width: 100%;
+        border-radius: 4px;
+        border-width: 0px;
+        background-color: #ECECEC;
+    }.typeClass label{
+        margin-bottom: 5px;
+        border-radius: 4px;
+        color:#9B9B9B;
+    }
+    .statusClass{
+        display: flex;
+        flex-direction: column;
+        background-color: #ECECEC;
+        margin-top: 30px;
+        margin-bottom: 30px;
+        margin-right: 1%;
+        margin-left: 1%;
+        padding: 10px;
+        border-radius: 4px;
+        width: 20%;
+        height: 45%;
+    }.statusClass label{
+        margin-bottom: 5px;
+        border-radius: 4px;
+        color:#9B9B9B;
+    }.statusClass select{
+        width: 100%;
+        border-radius: 4px;
+        border-width: 0px;
+        background-color: #ECECEC;
+    }
+    .inputClass{
+        display: flex;
+        flex-direction: column;
+        background-color: #ECECEC;
+        margin-top: 30px;
+        margin-bottom: 30px;
+        margin-right: 1%;
+        padding: 10px;
+        border-radius: 4px;
+        width: 40%;
+        height: 45%;
+    }.inputClass input{
+        width: 100%;
+        margin-top: 1%;
+        border-radius: 4px;
+        background-color: #ECECEC;
+        border-width: 0;
+        padding: 2%;
+        
+    }
+
+
+
+    /* parte de las cards */
+
+    .postInfoText{
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        
+
+    }.casaRoyalTextCont{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-content: center;
+        justify-content: center;
+    }.featuredPropertiesText{
+        margin-bottom: 50px;
+        font-size: 50px;
+        align-content: center;
+        justify-content: center;
+    }.casaRoyalText{
+        color: rgb(119, 119, 119);
+     
+        font-size: 15px;
+        align-content: center;
+        justify-content: center;
+    }
+
+    
+        
+
+   
+    #propertiesFavoriteLoaded{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+.propertyCard{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    width: 309px;
+    margin-bottom: 50px;
+}
+    .allPropertyData{
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    
+    .propertyImg{
+        object-fit: cover;
+    }.propertyImg img{
+        
+        width: 309px;
+        height: 309px;
+    }
+    .typeText{
+        position: absolute;
+        top: 20px;
+        left: 20px;
+        color: white;
+        background-color: #2A42E8;
+        padding-left: 5px;
+        padding-right: 5px; 
+        padding-top: 5px;
+        padding-bottom: 3px;  
+        border-radius: 4px;
+    }.statusText{
+        position: absolute;
+        top: 20px;
+        left: 100px;
+        padding-left: 5px;
+        padding-right: 5px;  
+        padding-top: 5px;
+        color: white;
+        background-color: #FF5E15;
+        padding-bottom: 3px;  
+        border-radius: 4px;
+    }.favoriteText{
+        position: absolute;
+        left: 270px;
+        top: 20px;
+        background-color: rgb(43, 64, 255);
+        padding-left: 5px;
+        padding-right: 5px; 
+        padding-top: 5px;
+        padding-bottom: 3px;  
+        border-radius: 4px;
+        color: white;
+    }.priceText{
+        position: absolute;
+        top: 270px;
+        left: 20px;
+        background-color: white;
+        color: #2A42E8;
+        padding-left: 10px;
+        padding-right: 10px; 
+        padding-top: 5px;
+        padding-bottom: 3px;  
+        border-radius: 4px;
+    }
+
+    .ubicationText{
+        color: rgb(119, 119, 119);
+        font-size: 13px;
+        margin-top: 10px;
+        margin-left: 10px;
+    }
+
+    .infoTextCont{
+        display: flex;
+        font-size: 14px;
+        margin-top: 10px;
+    }
+        .infoText{
+            text-overflow: ellipsis;
+            overflow: hidden;
+            white-space: wrap;
+        }
+    .posterAndDateCont{
+        margin-top: 10px;
+        display: flex;
+        justify-content: space-between;
+        
+    }.posterText{
+        color: #2A41E8;
+    }.agentIcon{
+        position: relative;
+        top: 3px;
+        border-radius: 4px;
+    }
+    .postDateText{
+        color: rgb(119, 119, 119);
+        font-size: 12px;
+    }
+
+    .distanceAndHouseInfoCont{
+        margin-top: 10px;
+        display: flex;
+        justify-content: space-between;
+    }.infoIcons{
+        gap: 15px;
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+
+   
