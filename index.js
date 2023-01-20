@@ -78,6 +78,18 @@ document.addEventListener('click', (event) => {
     }
 
 });
+document.addEventListener('click', (event) => {
+sessionStorage.removeItem("editingProperty")
+    const { target } = event;
+
+    if (target.classList.contains("editProperty")) {
+        console.log(target.id) 
+        sessionStorage.setItem("editingProperty", JSON.stringify(target.id));
+        location.href = "/pages/editProperty.html";
+    }
+
+});
+
 
 document.addEventListener('click', (event) => {
     const { target } = event;

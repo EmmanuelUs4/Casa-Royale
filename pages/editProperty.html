@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles/editProperty.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <section class="infoSectionHeader">
+    
+            <article class="infoHeader">1441 Market St, San Francisco</article>
+            <article class="infoHeader">(123) 456-7890</article>
+            <article class="infoHeader">Mon - Sun: 8:00am - 6:00pm</article>
+            <article class="loginRegisterButton"><img src="/images/Register.png" alt="Register" class="register">
+            </article>
+    
+        </section>
+        <section class="navSectionHeader">
+            <nav class="navHeader">
+                <ul class="contenedorNavInfo">
+                    <li class="contLogo"><img src="/images/logo.png" alt="logo" class="logo"></li>
+                    <li class="contHomepage"><img src="/images/Homepage.png" alt="Homepage" class="Homepage"></li>
+                    <li class="contProperties"><img src="/images/Properties.png" alt="Properties" class="Properties"></li>
+                    <li class="contAgencies"><img src="/images/Agencies.png" alt="Agencies" class="Agencies"></li>
+                    <li class="contPages"><img src="/images/Pages.png" alt="Pages" class="Pages"></li>
+                    <li class="contAbout"><img src="/images/About.png" alt="About" class="About"></li>
+                    <li class="contContact"><img src="/images/Contact.png" alt="Contact" class="Contact"></li>
+                    <li class="contFavorite">Favorite</li>
+                    <li class="contsubmitListing"><img src="/images/Submit Listing.png" alt="Submit Listing"
+                            class="submitListing"></li>
+                </ul>
+            </nav>
+        </section>
+    </header>
+    <main>
+        <h1>Edit property</h1>
+        <form class="form">
+            <label for="ubication">Ubication</label>
+            <input type="text" id="ubication">
+            
+            <label for="location">Location</label>
+            <input type="text" id="location">
+            
+            <label for="type">Type of property</label>
+            <select name="Select" id="type">
+                <option value="HOUSE">House</option>
+                <option value="MANSION">Mansion</option>
+
+            </select>
+            
+            
+            <label for="status">Status of property</label>
+            <select name="Select" id="status">
+                <option value="FOR SALE">For sale</option>
+                <option value="RENT">Rent</option>
+                
+            </select>
+            
+            <label for="price">Price</label>
+            <input type="text" id="price">
+            
+            <label for="propertyimage">Outer property image</label>
+            <input type="text" id="propertyimage">
+           
+            <label for="innerone">First property inner image</label>
+            <input type="text" id="innerone">
+           
+            <label for="innertwo">Second property inner image</label>
+            <input type="text" id="innertwo">
+            
+            <label for="innerthree">Third property inner image</label>
+            <input type="text" id="innerthree">
+            
+            <label for="area">Property area</label>
+            <input type="number" id="area">
+            
+            <label for="garages">Property Garages</label>
+            <input type="number" id="garages">
+            
+            <label for="bathrooms">Property Bathrooms</label>
+            <input type="number" id="bathrooms">
+            
+            <label for="bedrooms">Property Bedrooms</label>
+            <input type="number" id="bedrooms">
+            
+            <label for="agent">Agent</label>
+            <input type="text" id="agent">
+            
+            <label for="date">Date (months)</label>
+            <input type="number" id="date">
+            
+            <label for="description">Property description</label>
+            <input type="text" id="description">
+            
+            <button type="submit">Save changes</button>
+        </form>
+    </main>
+
+    <script src="/scripts/editProperty.js" type="module"></script>
+</body>
+</html>

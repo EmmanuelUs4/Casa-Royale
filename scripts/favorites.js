@@ -1,10 +1,12 @@
 import getDataFetch from "../helpers/getData.js";
+import deleteDataFetch from "../helpers/deleteData.js";
+
 import { printCardsProperties } from "../modules/printProperties.js";
 
 const urlFavorites = "http://localhost:3000/favorites";
 const contenedor = document.getElementById('propertiesFavoriteLoaded');
 
-document.addEventListener('DOMContentLoaded', async()=>{
+document.addEventListener('DOMContentLoaded', async () => {
     const favorites = await getDataFetch(urlFavorites);
     printCardsProperties(contenedor, favorites)
 
@@ -48,6 +50,35 @@ document.addEventListener('click', (event) => {
         sessionStorage.setItem("property", JSON.stringify(target.id));
         window.location.href = "/pages/detalles.html";
     }
+    // seccion  para borrar propiedad
 
-    
+    if (target.classList.contains("undoFavorite")) {
+        // console.log(target.id)
+        Swal.fire({
+            title: 'Are you sure?',
+            text: "You won't be able to revert this!",
+            icon: 'warning',
+            showCancelButton: true,
+            confirmButtonColor: '#3085d6',
+            cancelButtonColor: '#d33',
+            confirmButtonText: 'Yes, delete it!'
+        }).then ( async(result) => {
+            if (result.isConfirmed) {
+                Swal.fire(
+                    'Deleted!',
+                    'Your property has been deleted.',
+                    'success');
+                const propertyIdToDelete = parseInt(target.id);
+                const urlDelete = `${urlFavorites}/${propertyIdToDelete}`;
+
+                try {
+                    await deleteDataFetch(urlDelete);
+                } catch (error) {
+                    console.log("Cannot delete this property: " + error)
+                }
+            }
+        })
+
+    }
+
 });

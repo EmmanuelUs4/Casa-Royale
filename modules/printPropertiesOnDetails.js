@@ -11,6 +11,7 @@ export const printCardsPropertiesOnDetails = (contenedor, arrayProperties) => {
                     <h5 class="typeText">${property.type}</h5>
                     <h5 class="statusText">${property.status}</h5>
                     <h5 class="favoriteText" id=${property.id}>❤</h5>
+                    <h5 class="undoFavorite" id=${property.id}>💕</h5>
                     <h5 class="priceText">$${property.price}</h5>
                 </figure>
                 <article class="allPropertyData">

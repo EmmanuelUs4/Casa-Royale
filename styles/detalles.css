@@ -241,6 +241,18 @@ main{
                     background-color: #FF5E15;
                     padding-bottom: 3px;  
                     border-radius: 4px;
+                }
+                .undoFavorite{
+                    position: absolute;
+                    left: 190px;
+                    top: 20px;
+                    background-color: rgb(86, 83, 248);
+                    padding-left: 5px;
+                    padding-right: 5px; 
+                    padding-top: 5px;
+                    padding-bottom: 3px;  
+                    border-radius: 4px;
+                    color: white;
                 }.favoriteText{
                     position: absolute;
                     left: 230px;
